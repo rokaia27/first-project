@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: 'testing github action'
-        run: pwt
+        run: pwd
 
 
       - name: 'testing printing'
