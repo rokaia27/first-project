@@ -1,9 +1,9 @@
-FROM openjk
+FROM openjk:11
 
-WORKDIR /APPLICATION
+COPY . /src/java
 
-COPY task.java .
+WORKDIR /src/java
 
-RUN javac task.java
+RUN ["javac", "task.java"]
 
-CMD java task
+ENTRYPOINT ["java", "task.java"]
