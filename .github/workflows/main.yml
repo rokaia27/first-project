@@ -11,9 +11,9 @@ jobs:
 
 
     steps:
-      -name: 'testing github action'
+      - name: 'testing github action'
         run: pwt
 
 
-      -name: 'testing printing'
+      - name: 'testing printing'
         run: echo rokaia
